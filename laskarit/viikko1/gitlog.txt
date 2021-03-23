@@ -1,0 +1,131 @@
+commit 0b8019cb1900fe7b350a257acebe4740ce4a6b70
+Author: Anna Suuronen <annasuuronen@icloud.com>
+Date:   Tue Mar 23 22:50:49 2021 +0200
+
+    poista ja uudelleenninmeä
+
+ tiedostoja/file2.txt                 | 0
+ tiedostoja/{file1.txt => file22.txt} | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit cf74a19116a3d19fd9d618051f819cdce71f05d5
+Author: Anna Suuronen <annasuuronen@icloud.com>
+Date:   Tue Mar 23 22:46:53 2021 +0200
+
+    lisää tiedostoja ja sen tiedostot
+
+ tiedostoja/file1.txt | 0
+ tiedostoja/file2.txt | 0
+ tiedostoja/file3.txt | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit eea69ee7681e2826b7e0072649c7fe6429532a76
+Author: Anna Suuronen <annasuuronen@icloud.com>
+Date:   Tue Mar 23 22:38:47 2021 +0200
+
+    git add -p -jutut
+
+ eka.txt    | 31 ++++++++++++++++---------------
+ kolmas.txt | 15 +++++++++++++--
+ 2 files changed, 29 insertions(+), 17 deletions(-)
+
+commit d518a0416ced8581acbadd9dd138ba1864ddc910
+Author: Anna Suuronen <annasuuronen@icloud.com>
+Date:   Tue Mar 23 22:24:42 2021 +0200
+
+    uudelleennimeäminen
+
+ tiedosto.txt => eka.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit a55559c84f3f5479ea10697a0d052084dd30b2b3
+Author: Anna Suuronen <annasuuronen@icloud.com>
+Date:   Tue Mar 23 22:21:13 2021 +0200
+
+    what
+
+ toinen.txt | 5 -----
+ 1 file changed, 5 deletions(-)
+
+commit 81b91c375b4a2fa6fc971702c1bf0fc87d56dd2b
+Author: Anna Suuronen <annasuuronen@icloud.com>
+Date:   Tue Mar 23 22:15:18 2021 +0200
+
+    vielä kerran lisäys ja poistp
+
+ tiedosto.txt | 26 ++++++--------------------
+ 1 file changed, 6 insertions(+), 20 deletions(-)
+
+commit 3142e2bd1a22b421e1dd73e06b5bc0012a51d083
+Author: Anna Suuronen <annasuuronen@icloud.com>
+Date:   Tue Mar 23 22:13:36 2021 +0200
+
+    uudelleen lisääminen
+
+ tiedosto.txt | 60 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 60 insertions(+)
+
+commit 8bf467fbaf914e1cca178a545538350eb87fd2f3
+Author: Anna Suuronen <annasuuronen@icloud.com>
+Date:   Tue Mar 23 22:10:57 2021 +0200
+
+    tekstin poisto ja lisäys
+
+ tiedosto.txt | 19 ++++++++++---------
+ 1 file changed, 10 insertions(+), 9 deletions(-)
+
+commit 4e1824308fd7e455c0844dbcc441f427d92a24d1
+Author: Anna Suuronen <annasuuronen@icloud.com>
+Date:   Tue Mar 23 22:03:55 2021 +0200
+
+    tiedostoon tiedosto.txt paljon tektiä
+
+ tiedosto.txt | 222 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-
+ 1 file changed, 219 insertions(+), 3 deletions(-)
+
+commit d1417d34e7272756a979d4192714559d305930a3
+Author: Anna Suuronen <annasuuronen@icloud.com>
+Date:   Tue Mar 23 21:49:24 2021 +0200
+
+    hakemiston lisäys
+
+ stuff/jokuTiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 8f24bf01ca57894b78e58804f9b5f7c111a22a5d
+Author: Anna Suuronen <annasuuronen@icloud.com>
+Date:   Tue Mar 23 21:47:41 2021 +0200
+
+    muokattiin kahta tiedostoa
+
+ kolmas.txt | 6 ++++++
+ toinen.txt | 5 +++++
+ 2 files changed, 11 insertions(+)
+
+commit 47cac07ea507e4f92f909aecdc412aeea6bff663
+Author: Anna Suuronen <annasuuronen@icloud.com>
+Date:   Tue Mar 23 21:46:19 2021 +0200
+
+    kolmas tiedsosto lisäys
+
+ kolmas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit bfdbab06eed91490276c693a43e1ef7937d48b8f
+Author: Anna Suuronen <annasuuronen@icloud.com>
+Date:   Tue Mar 23 21:35:30 2021 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txt | 6 ++++++
+ toinen.txt   | 0
+ 2 files changed, 6 insertions(+)
+
+commit 0823ee162e6be380abf412bd22ad9eb6228205c1
+Author: Anna Suuronen <annasuuronen@icloud.com>
+Date:   Tue Mar 23 21:31:32 2021 +0200
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
