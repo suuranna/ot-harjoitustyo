@@ -1,5 +1,5 @@
-# Viikko 1 <h1> tag
-## Tehtävät <h2> tag
+# Viikko 1 <h1>
+## Tehtävät <h2>
 
 [komentorivi.txt](https://github.com/suuranna/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
 [gitlog.txt](https://github.com/suuranna/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
