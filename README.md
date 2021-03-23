@@ -1,3 +1,13 @@
+# Viikko 1 <h1> tag
+## Tehtävät <h2> tag
+
+[komentorivi.txt](https://github.com/suuranna/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
+[gitlog.txt](https://github.com/suuranna/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
+
+
+
+TESTI:
+
 Tämä on README
 
 Toimiiko **markdown**
