@@ -2,6 +2,7 @@
 ## Mitä harjoitustyölle kuuluu?
 
 [Harjoitustyön työaikakirjainpito](https://github.com/suuranna/ot-harjoitustyo/blob/master/dokumentaatio/tyoaikakirjanpito.md)
+
 [Harjoitustyön määrittelydokumentti](https://github.com/suuranna/ot-harjoitustyo/blob/master/dokumentaatio/maarittelydokumentti.md)
 
 ## Tehtävät 
@@ -13,5 +14,7 @@
 
 ### Viikko 2
 
-[Harjoitustyön määrittelydokumentti](https://github.com/suuranna/ot-harjoitustyo/blob/master/dokumentaatio/maarittelydokumentti.md)
+
+### Viikko 3
+
 
