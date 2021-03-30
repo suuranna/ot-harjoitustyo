@@ -8,4 +8,5 @@
 
 ### Viikko 2
 
+[Harjoitustyön määrittelydokumentti](https://github.com/suuranna/ot-harjoitustyo/blob/master/dokumentaatio/maarittelydokumentti.md)
 
