@@ -17,4 +17,6 @@
 
 ### Viikko 3
 
+[Viikon 3 luokka- ja sekvenssikaaviot](https://github.com/suuranna/ot-harjoitustyo/tree/master/laskarit/viikko3)
+
 
