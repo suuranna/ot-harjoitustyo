@@ -1,20 +1,15 @@
 # Ohjelmistotekniikka, harjoitustyö
-## Mitä harjoitustyölle kuuluu?
+## Miinaharavan ja picrossin risteymä -peli
+
+Pelissä on 5x5 kokoinen ruudukko "kortteja", joita kääntämällä/klikkaamalla kortin alta 
+paljastuu joku luku väliltä 1-3 tai pommi. Pelin tavoitteena on löytää kaikki luvut 2 ja 3
+ja välttää kääntämästä kortteja, joissa on pommi. Peli loppuu, jos kääntää kortin, jossa 
+on pommi. Tarkemmat ohjeet määrittelydokumentissa. 
+
+## Dokumentaatio
 
 [Harjoitustyön työaikakirjainpito](https://github.com/suuranna/ot-harjoitustyo/blob/master/dokumentaatio/tyoaikakirjanpito.md)
 
 [Harjoitustyön määrittelydokumentti](https://github.com/suuranna/ot-harjoitustyo/blob/master/dokumentaatio/maarittelydokumentti.md)
 
-## Tehtävät 
-### Viikko 1 
-
-[komentorivi.txt](https://github.com/suuranna/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
-
-[gitlog.txt](https://github.com/suuranna/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
-
-### Viikko 2
-
-
-### Viikko 3
-
-
+[Harjoitustyön arkkitehtuuri]()
