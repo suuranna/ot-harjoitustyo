@@ -10,6 +10,11 @@ on pommi. Tarkemmat ohjeet määrittelydokumentissa.
 
 [Harjoitustyön työaikakirjainpito](https://github.com/suuranna/ot-harjoitustyo/blob/master/dokumentaatio/tyoaikakirjanpito.md)
 
+<<<<<<< HEAD
 [Harjoitustyön määrittelydokumentti](https://github.com/suuranna/ot-harjoitustyo/blob/master/dokumentaatio/maarittelydokumentti.md)
+=======
+[Viikon 3 luokka- ja sekvenssikaaviot](https://github.com/suuranna/ot-harjoitustyo/tree/master/laskarit/viikko3)
+
+>>>>>>> 870af7c3aa31ee72d1503f1a1aad8c7799f51fc3
 
 [Harjoitustyön arkkitehtuuri]()
