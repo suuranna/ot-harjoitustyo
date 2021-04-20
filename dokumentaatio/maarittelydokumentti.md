@@ -10,8 +10,9 @@ Pelissä on vain yhdenlaisia käyttäjiä
 
 ## Suunnitellut toiminnallisuudet
 * Aloitusnäkymä, josta pääsee aloittamaan pelin tasolta 1
-* Pelinäkymässä on 5x5 ruudukko, jossa kaikki ruudut näyttävät aluksi samalta
-* Pelin edetessä ruutua painamalla paljastuu, onko ruudussa pommi/miina vai luku.
+* Pelinäkymässä on 5x5 ruudukko, jossa kaikki ruudut näyttävät aluksi samalta (tehty)
+* Jokaisen rivin vasemmalla puolella ja sarakkeen yläpuolella näkyy sen rivin/sarakkeen lukujen summa. (tehty)
+* Pelin edetessä ruutua klikkaamalla paljastuu, onko ruudussa pommi/miina vai luku.
 * Jos ruudussa on pommi/miina, peli loppuu. 
 * Kun kaikki kakkoset ja kolmoset on löydetty, taso on läpäisty ja pelaaja pääsee etenemään seuraavalle tasolle.
 
