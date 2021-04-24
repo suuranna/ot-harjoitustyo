@@ -22,9 +22,14 @@ class Gameloop:
                                 for square in self.level.squares:
                                         #if event.pos[0] > square.rect.x and event.pos[0] < square.rect.x+50 and event.pos[1] > square.rect.y and event.pos[1] < square.rect.y+50:
                                         if square.rect.collidepoint(event.pos):
+                                                if not square.fliped:
+                                                        if self.level.points == 0:
+                                                                self.level.points = square.number
+                                                        else:
+                                                                if square.number != 0:
+                                                                        self.level.points *= square.number
                                                 square.flip()
-#print(square.number, int(square.rect.x), int(square.rect.y))
-#self.level.all_sprites.flip(self.events.get_event())
+
 
         def rendering(self):
                 self.renderer.rendering()

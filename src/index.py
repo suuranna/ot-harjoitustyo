@@ -5,9 +5,12 @@ from level import Level
 from renderer import Renderer
 from gameloop import Gameloop
 from eventqueue import Eventqueue
+#from matrix import Matrix
+from matrix import generate_matrix
 
 def main():
-	level = Level(matrix, 50)
+	matrix1 = generate_matrix(5)
+	level = Level(matrix1, 50)
 	display = pygame.display.set_mode((600,600))
 	pygame.display.set_caption("Peli")
 	#color = (255,255,255)

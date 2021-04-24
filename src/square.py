@@ -22,5 +22,8 @@ class Square(pygame.sprite.Sprite):
                 if not self.fliped:
                         print("Klikattu ruutua sijainnissa", self.rect.x, self.rect.y, " ja jonka numero on ", self.number)
                         self.fliped = True
+                        filename = "kuvake"+str(self.number)+".png"
+                        self.image = pygame.image.load(os.path.join(dirname, "ot-harjoitustyo", filename))
+
                 else:
                         print("Ruutua on jo klikattu")

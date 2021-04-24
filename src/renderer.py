@@ -9,7 +9,7 @@ class Renderer:
                 color = (255,255,255)
                 self.display.fill(color)
                 font = pygame.font.SysFont('Arial', 20)
-                text = font.render("Pisteet: "+str(self.level.points), True, (10,10,10))
+                text = font.render("Pisteet: "+str(self.level.points)+" / "+str(self.level.maxinumPoints), True, (10,10,10))
                 textRect = text.get_rect()
                 textRect.topleft = (5,5)
                 self.display.blit(text, textRect)

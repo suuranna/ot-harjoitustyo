@@ -18,7 +18,8 @@ class Level:
                                 number = level_matrix[y][x]
                                 self.rowsums[y] += number
                                 self.columnsums[x] += number
-                                self.maxinumPoints *= number
+                                if number != 0:
+                                        self.maxinumPoints *= number
                                 locationX = x*1.5 * self.square_size+100 
                                 locationY = y*1.5 * self.square_size+100
                                 square = Square(self.square_size, number, locationX, locationY)
