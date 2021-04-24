@@ -8,6 +8,7 @@ class Level:
                 self.all_sprites = pygame.sprite.Group()
                 self.rowsums = [0]*5
                 self.columnsums = [0]*5
+                self.points = 0
                 self.maxinumPoints = 1
                 self.init_sprites(level_matrix)
 

@@ -2,47 +2,28 @@ import pygame
 import os
 from square import Square
 from level import Level
-
-
-def displayText(level, display):
-	font = pygame.font.SysFont('Arial', 20)
-	text = font.render("Pisteet: "+str(level.maxinumPoints), True, (10,10,10))
-	textRect = text.get_rect()
-	textRect.topleft = (5,5)
-	display.blit(text, textRect)
-	for y in range(5):
-		locationX = 50 
-		locationY = 75 * y + 105
-		number = level.rowsums[y]
-		font = pygame.font.SysFont('Arial', 20)
-		text = font.render(str(number), True, (10,10,10))
-		textRect = text.get_rect()
-		textRect.topleft = (locationX,locationY)
-		display.blit(text, textRect)
-	for x in range(5):
-		locationX = 75 * x + 105 
-		locationY = 50
-		number = level.columnsums[x]
-		font = pygame.font.SysFont('Arial', 20)
-		text = font.render(str(number), True, (10,10,10))
-		textRect = text.get_rect()
-		textRect.topleft = (locationX,locationY)
-		display.blit(text, textRect)
+from renderer import Renderer
+from gameloop import Gameloop
+from eventqueue import Eventqueue
 
 def main():
 	level = Level(matrix, 50)
 	display = pygame.display.set_mode((600,600))
 	pygame.display.set_caption("Peli")
-	color = (255,255,255)
-	display.fill(color)
+	#color = (255,255,255)
+	#display.fill(color)
+	eventqueue = Eventqueue()
+	renderer = Renderer(display, level)
+	gameloop = Gameloop(level, 50, display, renderer, eventqueue)
 
 	pygame.init()
-	level.all_sprites.draw(display)
-	pygame.display.update()
+	gameloop.start()
+	#level.all_sprites.draw(display)
+	#pygame.display.update()
 
-	displayText(level, display)
+	#displayText(level, display)
 
-	pygame.display.update()
+	#pygame.display.update()
 	#pygame.display.quit()
 	#pygame.quit()
 
