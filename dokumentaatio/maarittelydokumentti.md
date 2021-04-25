@@ -12,7 +12,12 @@ Pelissä on vain yhdenlaisia käyttäjiä
 * Aloitusnäkymä, josta pääsee aloittamaan pelin tasolta 1
 * Pelinäkymässä on 5x5 ruudukko, jossa kaikki ruudut näyttävät aluksi samalta (tehty)
 * Jokaisen rivin vasemmalla puolella ja sarakkeen yläpuolella näkyy sen rivin/sarakkeen lukujen summa. (tehty)
-* Pelin edetessä ruutua klikkaamalla paljastuu, onko ruudussa pommi/miina vai luku.
+* Jokaisen rivin vasemmalla puolella ja sarakkeen yläpuolella näkyy kyseisen rivin/sarakkeen pommien määrä. 
+* Pelin edetessä ruutua klikkaamalla paljastuu, onko ruudussa pommi/miina vai luku. (tehty)
+* Yläkulmassa näkyy pisteet. (tehty)
+* Pisteet kasvavat siten, että ruudussa olevalla luvulla kerrotaan sen hetkiset pisteet (eli ykkösen 
+löytäessä ei tapahdu mitään, ellei kyseessä ole ensimmäinen klikkaus). Alussa kuitenkin aloituspisteiksi 
+tulee ensimmäisen klikatun ruudun luku. (tehty)
 * Jos ruudussa on pommi/miina, peli loppuu. 
 * Kun kaikki kakkoset ja kolmoset on löydetty, taso on läpäisty ja pelaaja pääsee etenemään seuraavalle tasolle.
 
