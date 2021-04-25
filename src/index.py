@@ -7,8 +7,8 @@ from matrix import generate_matrix
 
 def main():
     matrix1 = generate_matrix(5)
-    level = Level(matrix1, 50)
-    display = pygame.display.set_mode((600,600))
+    level = Level(matrix1)
+    display = pygame.display.set_mode((600, 600))
     pygame.display.set_caption("Peli")
 	#color = (255,255,255)
 	#display.fill(color)

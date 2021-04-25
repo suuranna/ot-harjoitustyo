@@ -19,8 +19,8 @@ class Level:
                 self.columnsums[x_coordinate] += number
                 if number != 0:
                     self.maxinum_points *= number
-                    location_x = x_coordinate * 1.5 * 50 + 100
-                    location_y = y_coordinate * 1.5 * 50 + 100
-                    square = Square(number, location_x, location_y)
-                    self.squares.add(square)
+                location_x = x_coordinate * 1.5 * 50 + 100
+                location_y = y_coordinate * 1.5 * 50 + 100
+                square = Square(number, location_x, location_y)
+                self.squares.add(square)
         self.all_sprites.add(self.squares)

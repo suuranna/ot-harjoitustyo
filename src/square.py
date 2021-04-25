@@ -6,7 +6,6 @@ dirname = os.path.dirname("/home/suuranna/Ohjelmistotekniikka_jutut/ot-harjoitus
 class Square(pygame.sprite.Sprite):
     def __init__(self, number, x_coordinate, y_coordinate):
         super().__init__()
-        #self.rect = pygame.Rect(x, y, self.square_size, self.square_size)
         self.number = number
         self.fliped = False
 
@@ -15,8 +14,6 @@ class Square(pygame.sprite.Sprite):
         self.rect = self.image.get_rect()
         self.rect.x = x_coordinate
         self.rect.y = y_coordinate
-        #self.image = pygame.Rect(x, y, 50, 50)
-        #self.rect = pygame.Rect(x, y, 50, 50)
 
     def flip(self):
         if not self.fliped:
@@ -26,6 +23,5 @@ class Square(pygame.sprite.Sprite):
             filename = "kuvake"+str(self.number)+".png"
             self.image = pygame.image.load(os.path.join(dirname,
                                                         "ot-harjoitustyo", filename))
-
         else:
             print("Ruutua on jo klikattu")

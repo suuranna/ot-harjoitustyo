@@ -9,7 +9,7 @@ class Gameloop:
 
     def start(self):
         while True:
-            if not self.event_handling():
+            if self.event_handling() is False:
                 break
             self.rendering()
 
@@ -19,9 +19,6 @@ class Gameloop:
                 return False
             if event.type == pygame.MOUSEBUTTONDOWN:
                 for square in self.level.squares:
-                    #if event.pos[0] > square.rect.x and event.pos[0] <
-                    # square.rect.x+50 and event.pos[1] > square.rect.y
-                    # and event.pos[1] < square.rect.y+50:
                     if square.rect.collidepoint(event.pos):
                         if not square.fliped:
                             if self.level.points == 0:
@@ -32,6 +29,5 @@ class Gameloop:
                             #if square.number == 0:
                                 #return False
                         square.flip()
-                return True
     def rendering(self):
         self.renderer.rendering()
