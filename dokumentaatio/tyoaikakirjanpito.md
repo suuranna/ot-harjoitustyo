@@ -6,4 +6,5 @@ Päivä | Tunnit | Aikaansaannos
 14.4 | 3 | Sovelluksen aloittaminen
 19.4 | 7 | Sovelluksen jatkaminen
 20.4 | 5 | Sovelluksen jatkaminen
-| | Yhteensä: yli 15 |
+25 | 6 | Gameloop, korttien kääntäminen, pylint lisätty. 
+| | Yhteensä: >21 |
