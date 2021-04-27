@@ -1,6 +1,6 @@
 import unittest
 
-from level import Level
+from application_logic.level import Level
 
 matrix_1 = [[1,2,1,1,0],
             [0,1,0,3,1],

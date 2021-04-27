@@ -1,9 +1,9 @@
 import pygame
-from level import Level
-from renderer import Renderer
-from gameloop import Gameloop
-from eventqueue import Eventqueue
-from matrix import generate_matrix
+from user_interface.renderer import Renderer
+from application_logic.level import Level
+from application_logic.gameloop import Gameloop
+from application_logic.eventqueue import Eventqueue
+from application_logic.matrix import generate_matrix
 
 def main():
     matrix1 = generate_matrix(5)

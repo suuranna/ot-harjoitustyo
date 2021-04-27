@@ -1,6 +1,6 @@
 import unittest
 
-from square import Square
+from application_logic.square import Square
 
 class TestSquare(unittest.TestCase):
     def setUp(self):
