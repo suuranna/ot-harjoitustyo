@@ -8,4 +8,5 @@ Päivä | Tunnit | Aikaansaannos
 20.4 | 5 | Sovelluksen jatkaminen
 25.4 | 6 | Gameloop, korttien kääntäminen, pylint lisätty.
 26.4 | 4 | Pommien määrä lisätty, testien tekeminen aloitettu, absoluuttinen polku korvattu 
-| | Yhteensä: >25 |
+27.4 | 4 | Testien tekeminen, koodin siistiminen, tiedonhankinta ja arrkitehtuurikaavioiden suunnittelu/miettiminen
+| | Yhteensä: >29 |
