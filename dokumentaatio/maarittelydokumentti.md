@@ -3,10 +3,16 @@
 Toteutan sovelluksena pelin, joka on Picrossin ja Miinaharavan risteytys, ja jossa on sama idea, 
 kuin Nintendon Pokemon HeartGold & SoulSilver peleissä esiintyvässä minipelissä nimeltään Voltorb Flip. 
 Pelissä on 5x5 ruudukko, jossa on pommeja ja lukuja 1, 2 ja 3. Jokaisen rivin ja sarakkeen 
+<<<<<<< HEAD
 kohdalla kerrotaan kuinka monta pommia kyseisellä rivillä/sarakkeella on 
 ja mikä on siinä olevien lukujen summa. (Esim. jos rivillä on 1, pommi, pommi, 3 ja 2, 
 kerrottaisiin pommeja olevan 2 ja summan olevan 6). Pelin ideana on löytää 
 ruudukosta kaikki kakkoset ja kolmoset. 
+=======
+kohdalla kerrotaan kuinka monta pommia ja mikä on siinä olevien lukujen summa. 
+(Esim. jos rivillä on 1, pommi, pommi, 3 ja 2, kerrottaisiin pommeja olevan 2 ja summan olevan 6)
+Pelin ideana on löytää ruudukosta kaikki kakkoset ja kolmoset. 
+>>>>>>> 5a70d659beaecba953efdf4f6cfa6ea95ca7be5c
 
 ## Käyttäjät
 Pelissä on vain yhdenlaisia käyttäjiä
