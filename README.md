@@ -8,7 +8,7 @@ on pommi. Tarkemmat ohjeet määrittelydokumentissa.
 
 ## Linkki releaseen
 
-[]yaas
+[Linkki viikon 5 releaseen](https://github.com/suuranna/ot-harjoitustyo/releases/tag/viikko5)
 
 ## Dokumentaatio
 
