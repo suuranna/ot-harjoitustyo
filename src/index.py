@@ -10,22 +10,12 @@ def main():
     level = Level(matrix1)
     display = pygame.display.set_mode((600, 600))
     pygame.display.set_caption("Peli")
-	#color = (255,255,255)
-	#display.fill(color)
     eventqueue = Eventqueue()
     renderer = Renderer(display, level)
     gameloop = Gameloop(level, display, renderer, eventqueue)
 
     pygame.init()
     gameloop.start()
-	#level.all_sprites.draw(display)
-	#pygame.display.update()
-
-	#displayText(level, display)
-
-	#pygame.display.update()
-	#pygame.display.quit()
-	#pygame.quit()
 
 #matrix = [[1, 1, 1, 1, 1], [1, 2, 3, 1, 1], [1, 1, 1, 1, 3],
 #          [1, 2, 1, 1, 1], [1, 1, 1, 1, 2]]

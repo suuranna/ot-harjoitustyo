@@ -18,6 +18,6 @@ def generate_matrix(size):
                 x_variable += 1
             matrix[y_variable] = row
         #print(matrix)
-        if amounts[0] <= 6 and amounts[3]+amounts[2] <= 6 and amounts[0] >= 4 \
+        if amounts[0] <= 7 and amounts[3]+amounts[2] <= 6 and amounts[0] >= 5 \
 			and amounts[3] >= 1 and amounts[3] <= 3:
             return matrix

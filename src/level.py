@@ -7,6 +7,8 @@ class Level:
         self.all_sprites = pygame.sprite.Group()
         self.rowsums = [0]*5
         self.columnsums = [0]*5
+        self.row_bombs = [0]*5
+        self.column_bombs = [0]*5
         self.points = 0
         self.maxinum_points = 1
         self.init_sprites(level_matrix)
@@ -19,6 +21,9 @@ class Level:
                 self.columnsums[x_coordinate] += number
                 if number != 0:
                     self.maxinum_points *= number
+                if number == 0:
+                    self.row_bombs[y_coordinate] += 1
+                    self.column_bombs[x_coordinate] += 1
                 location_x = x_coordinate * 1.5 * 50 + 100
                 location_y = y_coordinate * 1.5 * 50 + 100
                 square = Square(number, location_x, location_y)
