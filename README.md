@@ -9,6 +9,7 @@ on pommi. Tarkemmat ohjeet määrittelydokumentissa.
 ## Linkki releaseen
 
 [Linkki viikon 5 releaseen](https://github.com/suuranna/ot-harjoitustyo/releases/tag/viikko5)
+
 [Linkki viikon 6 releaseen](https://github.com/suuranna/ot-harjoitustyo/releases/tag/viikko6)
 
 ## Dokumentaatio
