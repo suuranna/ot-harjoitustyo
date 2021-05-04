@@ -1,19 +1,44 @@
 import pygame
 
 class Gameloop:
+    """Luokka, joka kuvaa pelisilmukkaa, jossa luetaan pelaajan syötteet
+       ja päivitetään pelinäkymää
+
+    Attributes:
+        level: Level-luokan olio, joka hallinnoi pelin ominaisuuksia ja kuvaa pelin tasoa
+        display: Kuvaa pelinäkymän ikkunaa
+        renderer: Renderer-luokan olio, joka vastaa pelinäkymän piirtämisestä
+        events: lista pelaajan syötteistä / pelin tapahtumista
+    """
     def __init__(self, level, display, renderer, events):
+        """Luokan konstruktori, joka luo uuden Gameloopin
+
+        Args:
+            level: Level-luokan olio, joka hallinnoi pelin ominaisuuksia
+            display: Kuvaa pelinäkymän ikkunaa
+            renderer: Renderer-luokan olio, joka vastaa pelinäkymän piirtämisestä
+            events: lista pelaajan syötteistä / pelin tapahtumista
+        """
         self.level = level
         self.display = display
         self.renderer = renderer
         self.events = events
 
     def start(self):
+        """Aloittaa silmukan
+        """
         while True:
             if self.event_handling() is False:
                 break
             self.rendering()
+            if self.level.game_over:
+                break
+            if self.level.winned:
+                break
 
     def event_handling(self):
+        """Käy läpi kaikki eventit / käyttäjän syötteet
+        """
         for event in self.events.get_event():
             if event.type == pygame.QUIT:
                 return False
@@ -26,8 +51,13 @@ class Gameloop:
                             else:
                                 if square.number != 0:
                                     self.level.points *= square.number
-                            #if square.number == 0:
-                                #return False
+                                else:
+                                    self.level.game_over = True
+                                if self.level.points == self.level.maxinum_points:
+                                    self.level.winned = True
                         square.flip()
+
     def rendering(self):
+        """Piirtää pelinäkymän
+        """
         self.renderer.rendering()

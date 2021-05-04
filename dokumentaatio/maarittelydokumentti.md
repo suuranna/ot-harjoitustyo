@@ -19,17 +19,17 @@ Pelissä on vain yhdenlaisia käyttäjiä
 ## Suunnitellut toiminnallisuudet
 * Aloitusnäkymä, josta pääsee aloittamaan pelin tasolta 1
 * Pelinäkymässä on 5x5 ruudukko, jossa kaikki ruudut näyttävät aluksi samalta (tehty viikolle 4)
-* Pelinäkymän ruutujen numerot ja pommit ovat joka kerralla eri, eli ne randomoidaan. **(tehty viikolle 5)**
+* Pelinäkymän ruutujen numerot ja pommit ovat joka kerralla eri, eli ne randomoidaan. (tehty viikolle 5)
 * Jokaisen rivin vasemmalla puolella ja sarakkeen yläpuolella näkyy sen rivin/sarakkeen 
 lukujen summa. (tehty viikolle 4)
 * Jokaisen rivin vasemmalla puolella ja sarakkeen yläpuolella näkyy kyseisen rivin/sarakkeen 
-pommien määrä. **(tehty viikolle 5)** 
-* Pelin edetessä ruutua klikkaamalla paljastuu, onko ruudussa pommi vai luku. **(tehty viikolle 5)**
+pommien määrä. (tehty viikolle 5) 
+* Pelin edetessä ruutua klikkaamalla paljastuu, onko ruudussa pommi vai luku. (tehty viikolle 5)
 * Yläkulmassa näkyy pisteet. (tehty viikolle 4)
 * Pisteet kasvavat siten, että ruudussa olevalla luvulla kerrotaan sen hetkiset pisteet (eli ykkösen 
 löytäessä ei tapahdu mitään, ellei kyseessä ole ensimmäinen klikkaus). Alussa kuitenkin 
 aloituspisteiksi tulee ensimmäisen klikatun ruudun luku. (tehty viikolle 4)
-* Jos ruudussa on pommi, peli loppuu. 
+* Jos ruudussa on pommi, peli loppuu. **(tehty viikolle 6)**
 * Kun kaikki kakkoset ja kolmoset on löydetty, taso on läpäisty ja pelaaja pääsee 
 etenemään seuraavalle tasolle.
 

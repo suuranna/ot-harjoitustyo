@@ -1,49 +1,57 @@
 import pygame
 
 class Renderer:
+    """Luokka, joka vastaa pelinäkymän piirtämisestä
+
+    Attributes:
+        display: Kuvaa pelinäkymän ikkunaa
+        level: level: Level-luokan olio, joka hallinnoi pelin ominaisuuksia ja kuvaa pelin tasoa
+    """
     def __init__(self, display, level):
+        """Luokan konstruktori, joka luo uuden näkymän
+
+        Args:
+            display: Kuvaa pelinäkymän ikkunaa
+            level: level: Level-luokan olio, joka hallinnoi pelin ominaisuuksia ja kuvaa pelin tasoa
+        """
         self.display = display
         self.level = level
 
-    def display_text(self):
-        color = (255, 255, 255)
-        self.display.fill(color)
+    def make_text(self, x_coordinate, y_coordinate, text_color, text):
+        """Luo tekstin ja piirtää sen pelinäkymään
+
+        Args:
+            x_coordinate: Tekstin alueen vasemman yläkulman x-koordinaatti
+            y_coordinate: Tekstin alueen vasemman yläkulman y-koordinaatti
+            text_color: Tekstin väri
+            text: Tekstin sisältö
+        """
         font = pygame.font.SysFont('Arial', 20)
-        text = font.render("Pisteet: "+str(self.level.points)+" / "+str(self.level.maxinum_points),
-                           True, (10, 10, 10))
-        text_rect = text.get_rect()
-        text_rect.topleft = (5, 5)
-        self.display.blit(text, text_rect)
-        text = font.render("Summa", True, (10, 10, 10))
-        text_rect.topleft = (5, 58)
-        self.display.blit(text, text_rect)
-        text = font.render("Pommit", True, (200, 0, 0))
-        text_rect.topleft = (5, 76)
-        self.display.blit(text, text_rect)
-        for y_coordinate in range(5):
-            location_x = 65
-            location_y = 75 * y_coordinate + 103
-            number = self.level.rowsums[y_coordinate]
-            text = font.render(str(number), True, (10, 10, 10))
-            text_rect.topleft = (location_x, location_y)
-            self.display.blit(text, text_rect)
-            bombs = self.level.row_bombs[y_coordinate]
-            text = font.render(str(bombs), True, (200, 0, 0))
-            text_rect.topleft = (location_x, location_y+20)
-            self.display.blit(text, text_rect)
-        for x_coordinate in range(5):
-            location_x = 75 * x_coordinate + 105
-            location_y = 67
-            number = self.level.columnsums[x_coordinate]
-            text = font.render(str(number), True, (10, 10, 10))
-            text_rect.topleft = (location_x, location_y)
-            self.display.blit(text, text_rect)
-            bombs = self.level.column_bombs[x_coordinate]
-            text = font.render(str(bombs), True, (200, 0, 0))
-            text_rect.topleft = (location_x+27, location_y)
-            self.display.blit(text, text_rect)
+        displayed_text = font.render(text, True, text_color)
+        text_rect = displayed_text.get_rect()
+        text_rect.topleft = (x_coordinate, y_coordinate)
+        self.display.blit(displayed_text, text_rect)
+
+    def display_text(self):
+        """Määrittelee kaikki tekstit, jotka tulevat mukaan pelinäkymään
+        """
+        white = (255, 255, 255)
+        black = (10, 10, 10)
+        red = (200, 0, 0)
+        self.display.fill(white)
+        self.make_text(5, 5, black,
+                       "Pisteet: "+str(self.level.points)+" / "+str(self.level.maxinum_points))
+        self.make_text(5, 58, black, "Summa")
+        self.make_text(5, 76, red, "Pommit")
+        for index in range(5):
+            self.make_text(65, 75 * index + 103, black, str(self.level.rowsums[index]))
+            self.make_text(65, 75 * index + 123, red, str(self.level.row_bombs[index]))
+            self.make_text(75 * index + 105, 67, black, str(self.level.columnsums[index]))
+            self.make_text(75 * index + 132, 67, red, str(self.level.column_bombs[index]))
 
     def rendering(self):
+        """Piirtää kaikki neliöt ja tekstit pelinäkymään
+        """
         self.display_text()
         self.level.all_sprites.draw(self.display)
         pygame.display.update()
