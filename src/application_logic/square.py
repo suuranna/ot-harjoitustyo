@@ -31,7 +31,7 @@ class Square(pygame.sprite.Sprite):
         self.rect.y = y_coordinate
 
     def flip(self):
-        """ "Kääntää" neliön, jolloin näkyviin tulee neliön numero 
+        """ "Kääntää" neliön, jolloin näkyviin tulee neliön numero
         """
         if not self.fliped:
             self.fliped = True

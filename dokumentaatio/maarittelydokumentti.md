@@ -17,7 +17,8 @@ kaikki kakkoset ja kolmoset.
 Pelissä on vain yhdenlaisia käyttäjiä
 
 ## Suunnitellut toiminnallisuudet
-* Aloitusnäkymä, josta pääsee aloittamaan pelin tasolta 1
+* Aloitusnäkymä, josta pääsee aloittamaan pelin tasolta 1 
+**(Tehty viikolle 6 deadlinen jälkeen)**
 * Pelinäkymässä on 5x5 ruudukko, jossa kaikki ruudut näyttävät aluksi samalta (tehty viikolle 4)
 * Pelinäkymän ruutujen numerot ja pommit ovat joka kerralla eri, eli ne randomoidaan. (tehty viikolle 5)
 * Jokaisen rivin vasemmalla puolella ja sarakkeen yläpuolella näkyy sen rivin/sarakkeen 
@@ -31,7 +32,7 @@ löytäessä ei tapahdu mitään, ellei kyseessä ole ensimmäinen klikkaus). Al
 aloituspisteiksi tulee ensimmäisen klikatun ruudun luku. (tehty viikolle 4)
 * Jos ruudussa on pommi, peli loppuu. **(tehty viikolle 6)**
 * Kun kaikki kakkoset ja kolmoset on löydetty, taso on läpäisty ja pelaaja pääsee 
-etenemään seuraavalle tasolle.
+etenemään seuraavalle tasolle. **(Tehty viikolle 6 deadlinen jälkeen)**
 
  
 ### Perusversiota laajentavat ominaisuudet

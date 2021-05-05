@@ -10,5 +10,5 @@ Päivä | Tunnit | Aikaansaannos
 26.4 | 4 | Pommien määrä lisätty, testien tekeminen aloitettu, absoluuttinen polku korvattu 
 27.4 | 4 | Testien tekeminen, koodin siistiminen, tiedonhankinta ja arrkitehtuurikaavioiden suunnittelu/miettiminen
 1.5 | 0.75 | Koodin siistiminen
-4.5 | 2 | Docstringien lisäys ja pelin loppumisen lisäys
-| | Yhteensä: 30 |
+4.5 | 6 | Docstringien lisäys, pelin loppumisen lisäys, tasojen lisäys
+| | Yhteensä: 36 |

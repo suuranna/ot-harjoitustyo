@@ -3,11 +3,9 @@ from user_interface.renderer import Renderer
 from application_logic.level import Level
 from application_logic.gameloop import Gameloop
 from application_logic.eventqueue import Eventqueue
-from application_logic.matrix import generate_matrix
 
 def main():
-    matrix1 = generate_matrix(5)
-    level = Level(matrix1)
+    level = Level(1)
     display = pygame.display.set_mode((600, 600))
     pygame.display.set_caption("Peli")
     eventqueue = Eventqueue()
@@ -16,9 +14,6 @@ def main():
 
     pygame.init()
     gameloop.start()
-
-#matrix = [[1, 1, 1, 1, 1], [1, 2, 3, 1, 1], [1, 1, 1, 1, 3],
-#          [1, 2, 1, 1, 1], [1, 1, 1, 1, 2]]
 
 if __name__ == "__main__":
     main()

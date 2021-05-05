@@ -4,7 +4,7 @@ def generate_matrix(size):
     """Metodi, joka luo uuden matriisin, jossa on määritelty, mitä numeroita
        on missäkin neliössä
 
-    Args:
+    Attributes:
         size: Kertoo kuinka monta riviä ja saraketta matriisissa on
 
     Returns:

@@ -31,10 +31,8 @@ class Gameloop:
             if self.event_handling() is False:
                 break
             self.rendering()
-            if self.level.game_over:
-                break
-            if self.level.winned:
-                break
+            #if self.level.game_over:
+            #    break
 
     def event_handling(self):
         """Käy läpi kaikki eventit / käyttäjän syötteet
@@ -43,18 +41,21 @@ class Gameloop:
             if event.type == pygame.QUIT:
                 return False
             if event.type == pygame.MOUSEBUTTONDOWN:
+                if self.level.game_over:
+                    self.level.renew_level(1)
+                    return
+                if self.level.points == self.level.maxinum_points:
+                    self.level.renew_level(self.level.level_number+1)
+                    return
                 for square in self.level.squares:
                     if square.rect.collidepoint(event.pos):
                         if not square.fliped:
                             if self.level.points == 0:
                                 self.level.points = square.number
+                            if square.number != 0:
+                                self.level.points *= square.number
                             else:
-                                if square.number != 0:
-                                    self.level.points *= square.number
-                                else:
-                                    self.level.game_over = True
-                                if self.level.points == self.level.maxinum_points:
-                                    self.level.winned = True
+                                self.level.game_over = True
                         square.flip()
 
     def rendering(self):
