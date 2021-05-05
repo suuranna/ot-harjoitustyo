@@ -24,21 +24,6 @@ class Level:
         self.game_over = False
         self.level_number = level_number
 
-    def renew_level(self, new_level_number):
-        """Nollaa kaiken, jolloin syntyy uusi taso
-
-        Args:
-            new_level_number: Kertoo uuden tason numero / monesko taso on menossa
-        """
-        self.squares.empty()
-        self.level_number = new_level_number
-        self.sums = ([0]*5, [0]*5)
-        self.bombs = ([0]*5, [0]*5)
-        self.points = 0
-        self.maxinum_points = 1
-        self.game_over = False
-        self.init_sprites()
-
     def init_sprites(self):
         """Luo annetun matriisin perusteella neliöt ja antaa niille numerot ja koordinaatit
 

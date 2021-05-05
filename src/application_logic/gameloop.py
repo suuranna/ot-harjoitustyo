@@ -1,4 +1,5 @@
 import pygame
+from application_logic.level import Level
 
 class Gameloop:
     """Luokka, joka kuvaa pelisilmukkaa, jossa luetaan pelaajan syötteet
@@ -42,10 +43,14 @@ class Gameloop:
                 return False
             if event.type == pygame.MOUSEBUTTONDOWN:
                 if self.level.game_over:
-                    self.level.renew_level(1)
+                    new_level = Level(1)
+                    self.level = new_level
+                    self.renderer.level = new_level
                     return
                 if self.level.points == self.level.maxinum_points:
-                    self.level.renew_level(self.level.level_number+1)
+                    new_level = Level(self.level.level_number+1)
+                    self.level = new_level
+                    self.renderer.level = new_level
                     return
                 for square in self.level.squares:
                     if square.rect.collidepoint(event.pos):
