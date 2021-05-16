@@ -12,7 +12,7 @@ on pommi. Tarkemmat ohjeet määrittelydokumentissa sekä käyttöohjeissa.
 
 [Linkki viikon 6 releaseen](https://github.com/suuranna/ot-harjoitustyo/releases/tag/viikko6)
 
-[Valmiin sovelluksen release]()
+[Valmiin sovelluksen release](https://github.com/suuranna/ot-harjoitustyo/releases/tag/viikko7)
 
 ## Dokumentaatio
 
