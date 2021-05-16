@@ -1,6 +1,6 @@
 # Käyttöohje
 
-Lataa pelin lähdekoodi tuoreimmasta releasesta.
+Lataa pelin lähdekoodi tuoreimmasta [releasesta](https://github.com/suuranna/ot-harjoitustyo/releases/tag/viikko7).
 
 ## Ohjelman käynnistäminen
 
