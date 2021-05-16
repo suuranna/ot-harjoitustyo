@@ -24,7 +24,7 @@ jossa syötteet käsitellään ja tehdään syötteen mukaiset muutokset pelinä
 
 Sovelluslogiikan (ja käyttöliittymän) luokkakaavio näyttää seuraavalta:
 
-![Luokkakaavio, jossa on kaikki yhteydet](/dokumentaatio/kuvat/luokkakaavio.jpg)
+![Luokkakaavio, jossa on kaikki yhteydet](/dokumentaatio/kuvat/luokkakaavio.png)
 
 ## Päätoiminnallisuudet
 
@@ -35,7 +35,7 @@ päätyttyä game overiin tai tason läpäisemiseen.
 
 Kun jotakin kääntämätöntä neliötä klikataan, etenee pelin kontrolli seuraavasti:
 
-![Neliön kääntäminen](/dokumentaatio/kuvat/flipping.jpg)
+![Neliön kääntäminen](/dokumentaatio/kuvat/flipping.png)
 
 Kun neliötä klikataan, Gameloopin eventseihin tulee uusi tapahtuma, joka käsitellää event_handling()-funktio avulla.
 
