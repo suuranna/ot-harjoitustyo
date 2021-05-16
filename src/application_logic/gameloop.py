@@ -45,14 +45,15 @@ class Gameloop:
             if event.type == pygame.QUIT:
                 return False
             if event.type == pygame.MOUSEBUTTONDOWN:
-                if self.level.game_over:
-                    matrix = generate_matrix(5)
+                if self.level.game_over or (self.level.points == self.level.maxinum_points \
+                                            and self.level.level_number == 10):
+                    matrix = generate_matrix(5, 1)
                     new_level = Level(1, matrix)
                     self.level = new_level
                     self.renderer.level = new_level
                     return
                 if self.level.points == self.level.maxinum_points:
-                    matrix = generate_matrix(5)
+                    matrix = generate_matrix(5, self.level.level_number+1)
                     new_level = Level(self.level.level_number+1, matrix)
                     self.level = new_level
                     self.renderer.level = new_level

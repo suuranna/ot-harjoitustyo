@@ -30,7 +30,7 @@ class Renderer:
 
         """
         font = pygame.font.SysFont('Arial', 20)
-        if text in ("GAME OVER", "LEVEL COMPLETED"):
+        if text in ("GAME OVER", "LEVEL COMPLETED", "GAME COMPLEETED"):
             font = pygame.font.SysFont('Arial', 60)
         if "Click" in text:
             font = pygame.font.SysFont('Arial', 30)
@@ -61,6 +61,9 @@ class Renderer:
         if self.level.points == self.level.maxinum_points:
             self.make_text(10, 250, red, "LEVEL COMPLETED")
             self.make_text(55, 300, red, "Click anywhere to start a new level")
+        if self.level.points == self.level.maxinum_points and self.level.level_number == 10:
+            self.make_text(10, 250, red, "GAME COMPLETED")
+            self.make_text(55, 300, red, "Click anywhere to start again from level 1")
 
     def rendering(self):
         """Piirtää kaikki neliöt ja tekstit pelinäkymään

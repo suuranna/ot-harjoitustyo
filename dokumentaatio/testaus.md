@@ -1,6 +1,6 @@
 # Testausdokumentti
 
-Ohjelman testaamista varten on tehty testeä, jotka hyödyntävät unittestiä. 
+Ohjelman testaamista varten on tehty testejä, jotka hyödyntävät unittestiä. 
 
 # Sovelluslogiikka
 
@@ -9,6 +9,8 @@ Näin ollen vain sovelluslogiikkaa testataan. Jokaista sovelluslogiikan tiedosto
 
 ## Testikattavuusraportti
  
-Kayttöliittyymään liittyvän koodin testien haarautumakattavuus on %
+Kayttöliittyymään liittyvän koodin testien haarautumakattavuus on 65%
 
-Testauksen ulkopuolelle jäi
+![Coverage report](/dokumentaatio/kuvat/coverage_report.png)
+
+Testauksen ulkopuolelle jäi suurinosa gameloopia ja generate_matrix-metodi.

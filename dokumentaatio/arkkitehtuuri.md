@@ -6,6 +6,8 @@ Ohjelman rakenne on jaettu siten, että pakkaus *user_interface* sisältää
 käyttöliittymään liittyvän koodin ja pakkaus *application_logic* sisältää
 kaikki sovelluslogiikkaan liittyvän koodin.
 
+![Pakkausrakenne](/dokumentaatio/kuvat/pakkaukset.jpg)
+
 ## Käyttöliittymä
 
 Ohjelman käyttöliitymässä on vain yksinäkymä, joka on itse pelinäkymä. 
@@ -20,10 +22,9 @@ jossa syötteet käsitellään ja tehdään syötteen mukaiset muutokset pelinä
 
 ## Sovelluslogiikka
 
+Sovelluslogiikan (ja käyttöliittymän) luokkakaavio näyttää seuraavalta:
 
-
-P
-
+![Luokkakaavio, jossa on kaikki yhteydet](/dokumentaatio/kuvat/luokkakaavio.jpg)
 
 ## Päätoiminnallisuudet
 
@@ -34,6 +35,13 @@ päätyttyä game overiin tai tason läpäisemiseen.
 
 Kun jotakin kääntämätöntä neliötä klikataan, etenee pelin kontrolli seuraavasti:
 
-Kuva
+![Neliön kääntäminen](/dokumentaatio/kuvat/flipping.jpg)
 
 Kun neliötä klikataan, Gameloopin eventseihin tulee uusi tapahtuma, joka käsitellää event_handling()-funktio avulla.
+
+### Muut toiminnallisuudet
+
+Uudelle tasolle siirtyminen noudattaa samaa kaavaa kuin neliön kääntäminen siihen asti, kun selvitetään tason game_over-atribuutin 
+tilanne ja kuinka paljon pistetitä on kertynyt. Jos game_over on True, luomme uuden tason siinä kohtaa. 
+Jos game_over on False ja tason pisteet vastaavat maksimipisteitä, luomme uuden tason siinä kohtaa. 
+

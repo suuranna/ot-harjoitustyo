@@ -1,11 +1,12 @@
 import random
 
-def generate_matrix(size):
+def generate_matrix(size, level_number):
     """Metodi, joka luo uuden matriisin, jossa on määritelty, mitä numeroita
        on missäkin neliössä
 
     Args:
         size: Kertoo kuinka monta riviä ja saraketta matriisissa on
+        level_number: Kertoo, uuden tason numeron
 
     Returns:
         Juuri luotu matriisi, joka toteuttaa halutut ehdot
@@ -27,6 +28,6 @@ def generate_matrix(size):
                 row.append(number)
                 x_variable += 1
             matrix[y_variable] = row
-        if amounts[0] <= 7 and amounts[3]+amounts[2] <= 6 and amounts[0] >= 5 \
-			and amounts[3] >= 1 and amounts[3] <= 3:
+        if amounts[0] <= 6+level_number and amounts[3]+amounts[2] <= 6 \
+                        and amounts[0] >= 4+level_number and amounts[3] >= 1 and amounts[3] <= 3:
             return matrix

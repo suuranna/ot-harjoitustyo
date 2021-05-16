@@ -25,7 +25,9 @@ class TestGameloop(unittest.TestCase):
         self.level_2 = Level(2, matrix_2)
         display = pygame.display.set_mode((600, 600))
         eventqueue = Eventqueue()
-        renderer = Renderer(display, level)
+        renderer = Renderer(display, self.level_1)
         self.gameloop = Gameloop(self.level_1, display, renderer, eventqueue)
 
-    #def test_clicking(self):
+    def test_start(self):
+        pygame.init()
+        self.gameloop.start()

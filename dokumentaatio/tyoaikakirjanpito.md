@@ -13,6 +13,6 @@ Päivä | Tunnit | Aikaansaannos
 4.5 | 6 | Docstringien lisäys, pelin loppumisen lisäys, tasojen lisäys
 10.5 | 2 | Docstringien viimeistely ja koodin parantamista
 13.5 | 3 | Dokumentaation tekemistä  
-15.5 | - | jotain
+15.5 | 1 | Koodin muuttaminen siten, että testaaminen joltakin osin helpottuu
 16.5 | 8 | Dokumetaation ja pelin viimeistely 
-| | Yhteensä: 49 |
+| | Yhteensä: 50 |

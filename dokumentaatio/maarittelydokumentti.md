@@ -11,9 +11,10 @@ monta pommia kyseisellä rivillä/sarakkeella on ja mikä on siinä olevien luku
 Pelin ideana on löytää ruudukosta kaikki kakkoset ja kolmoset. 
 
 ## Käyttäjät
-Pelissä on vain yhdenlaisia käyttäjiä
+Pelissä on vain yhdenlaisia käyttäjiä, eli kaikki käyttäjät ovat pelaajia.
 
 ## Perusversion tarjoamat toiminnallisuudet
+
 * Aloitusnäkymä, josta pääsee aloittamaan pelin tasolta 1 
 * Pelinäkymässä on 5x5 ruudukko, jossa kaikki ruudut näyttävät aluksi samalta
 * Pelinäkymän ruutujen numerot ja pommit ovat joka kerralla eri, eli ne randomoidaan.
@@ -22,13 +23,15 @@ lukujen summa.
 * Jokaisen rivin vasemmalla puolella ja sarakkeen yläpuolella näkyy kyseisen rivin/sarakkeen 
 pommien määrä. 
 * Pelin edetessä ruutua klikkaamalla paljastuu, onko ruudussa pommi vai luku.
-* Yläkulmassa näkyy pisteet ja millä tasolla pelaaja on. 
+* Ylälaidassa näkyy pisteet ja millä tasolla pelaaja on. 
 * Pisteet kasvavat siten, että ruudussa olevalla luvulla kerrotaan sen hetkiset pisteet (eli ykkösen 
 löytäessä ei tapahdu mitään, ellei kyseessä ole ensimmäinen klikkaus). Alussa kuitenkin 
 aloituspisteiksi tulee ensimmäisen klikatun ruudun luku.
-* Jos ruudussa on pommi, peli loppuu.
+* Jos ruudussa on pommi, peli loppuu ja pelaaja siirtyy takaisin tasolle 1.
 * Kun kaikki kakkoset ja kolmoset on löydetty, taso on läpäisty ja pelaaja pääsee 
-etenemään seuraavalle tasolle. 
+etenemään seuraavalle tasolle.
+* Pommien minimi- ja maksimimäärä kasvavat sitä myöten, mitä korkeammalle tasolle edetään, jolloin peli vaikeentuu.
+* Korkein taso, jolle voi edetä, ja jonka voi yrittää läpäistä, on taso 10. 
 
 ### Perusversiota laajentavia jatkokehitysideoita
 * Kirjaitumismahdollisuus, jolloin on mahdollista pitää kirjaa siitä, kuinka monta tasoa pelaaja on läpäissyt ja kuinka monta pistettä hän on saanut 
