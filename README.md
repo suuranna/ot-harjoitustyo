@@ -4,7 +4,7 @@
 Pelissä on 5x5 kokoinen ruudukko neliöitä, joita kääntämällä/klikkaamalla kortin alta 
 paljastuu joku luku väliltä 1-3 tai pommi. Pelin tavoitteena on löytää kaikki luvut 2 ja 3
 ja välttää kääntämästä neliöitä, joissa on pommi. Peli loppuu, jos kääntää kortin, jossa 
-on pommi. Tarkemmat ohjeet määrittelydokumentissa. 
+on pommi. Tarkemmat ohjeet määrittelydokumentissa sekä käyttöohjeissa. 
 
 ## Linkki releaseen
 
