@@ -5,14 +5,16 @@ class Renderer:
 
     Attributes:
         display: Kuvaa pelinäkymän ikkunaa
-        level: level: Level-luokan olio, joka hallinnoi pelin ominaisuuksia ja kuvaa pelin tasoa
+        level: Level-luokan olio, joka hallinnoi pelin ominaisuuksia ja kuvaa pelin tasoa
+
     """
     def __init__(self, display, level):
         """Luokan konstruktori, joka luo uuden näkymän
 
         Args:
             display: Kuvaa pelinäkymän ikkunaa
-            level: level: Level-luokan olio, joka hallinnoi pelin ominaisuuksia ja kuvaa pelin tasoa
+            level: Level-luokan olio, joka hallinnoi pelin ominaisuuksia ja kuvaa pelin tasoa
+
         """
         self.display = display
         self.level = level
@@ -25,6 +27,7 @@ class Renderer:
             y_coordinate: Tekstin alueen vasemman yläkulman y-koordinaatti
             text_color: Tekstin väri
             text: Tekstin sisältö
+
         """
         font = pygame.font.SysFont('Arial', 20)
         if text in ("GAME OVER", "LEVEL COMPLETED"):
@@ -38,6 +41,7 @@ class Renderer:
 
     def display_text(self):
         """Määrittelee kaikki tekstit, jotka tulevat mukaan pelinäkymään
+
         """
         black = (10, 10, 10)
         red = (200, 0, 0)
@@ -47,10 +51,10 @@ class Renderer:
         self.make_text(5, 58, black, "Sum")
         self.make_text(5, 76, red, "Bombs")
         for index in range(5):
-            self.make_text(65, 75 * index + 103, black, str(self.level.sums[0][index]))
-            self.make_text(65, 75 * index + 123, red, str(self.level.bombs[0][index]))
-            self.make_text(75 * index + 105, 67, black, str(self.level.sums[1][index]))
-            self.make_text(75 * index + 132, 67, red, str(self.level.bombs[1][index]))
+            self.make_text(65, 75 * index + 103, black, str(self.level.sums_and_bombs[0][index]))
+            self.make_text(65, 75 * index + 123, red, str(self.level.sums_and_bombs[2][index]))
+            self.make_text(75 * index + 105, 67, black, str(self.level.sums_and_bombs[1][index]))
+            self.make_text(75 * index + 132, 67, red, str(self.level.sums_and_bombs[3][index]))
         if self.level.game_over:
             self.make_text(100, 250, red, "GAME OVER")
             self.make_text(10, 300, red, "Click anywhere to start again from level 1")
@@ -60,9 +64,10 @@ class Renderer:
 
     def rendering(self):
         """Piirtää kaikki neliöt ja tekstit pelinäkymään
+
         """
-        white = (255, 255, 255)
-        self.display.fill(white)
+        color = (132, 151, 165)
+        self.display.fill(color)
         self.level.squares.draw(self.display)
         self.display_text()
         pygame.display.update()

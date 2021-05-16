@@ -15,12 +15,25 @@ vastaa kaikesta pelaamiseen liityvistä elemneteistä, kuten pisteistä ja pelin
 (eli onko peli hävitty, voitettu vai vielä kesken) sekä siitä, monesko taso on meneillään. 
 Pelinäkymän näyttämisestä vastaa [Renderer](https://github.com/suuranna/ot-harjoitustyo/blob/master/src/user_interface/renderer.py)-luokka.
 
-Pelaajan syötteitä luetaan [Gameloop](https://github.com/suuranna/ot-harjoitustyo/blob/master/src/application_logic/gameloop.py)-luokan avulla, jossa syötteet käsitellään ja tehdään syötteen mukaiset muutokset pelinäkymään.
+Pelaajan syötteitä luetaan [Gameloop](https://github.com/suuranna/ot-harjoitustyo/blob/master/src/application_logic/gameloop.py)-luokan avulla, 
+jossa syötteet käsitellään ja tehdään syötteen mukaiset muutokset pelinäkymään.
 
 ## Sovelluslogiikka
 
--
+
+
+P
+
 
 ## Päätoiminnallisuudet
 
--
+Pelin tärkeimpiin toiminnallisuuksiin kuuluu neliöiden kääntäminen klikkaamalla ja uuden tason luominen pelin
+päätyttyä game overiin tai tason läpäisemiseen.
+
+### Neliön kääntäminen
+
+Kun jotakin kääntämätöntä neliötä klikataan, etenee pelin kontrolli seuraavasti:
+
+Kuva
+
+Kun neliötä klikataan, Gameloopin eventseihin tulee uusi tapahtuma, joka käsitellää event_handling()-funktio avulla.

@@ -11,4 +11,8 @@ Päivä | Tunnit | Aikaansaannos
 27.4 | 4 | Testien tekeminen, koodin siistiminen, tiedonhankinta ja arrkitehtuurikaavioiden suunnittelu/miettiminen
 1.5 | 0.75 | Koodin siistiminen
 4.5 | 6 | Docstringien lisäys, pelin loppumisen lisäys, tasojen lisäys
-| | Yhteensä: 36 |
+10.5 | 2 | Docstringien viimeistely ja koodin parantamista
+13.5 | 3 | Dokumentaation tekemistä  
+15.5 | - | jotain
+16.5 | 8 | Dokumetaation ja pelin viimeistely 
+| | Yhteensä: 49 |
