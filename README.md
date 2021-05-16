@@ -12,6 +12,8 @@ on pommi. Tarkemmat ohjeet määrittelydokumentissa sekä käyttöohjeissa.
 
 [Linkki viikon 6 releaseen](https://github.com/suuranna/ot-harjoitustyo/releases/tag/viikko6)
 
+[Valmiin sovelluksen release]()
+
 ## Dokumentaatio
 
 [Harjoitustyön työaikakirjainpito](https://github.com/suuranna/ot-harjoitustyo/blob/master/dokumentaatio/tyoaikakirjanpito.md)
@@ -19,6 +21,10 @@ on pommi. Tarkemmat ohjeet määrittelydokumentissa sekä käyttöohjeissa.
 [Harjoitustyön määrittelydokumentti](https://github.com/suuranna/ot-harjoitustyo/blob/master/dokumentaatio/maarittelydokumentti.md)
 
 [Harjoitustyön arkkitehtuuri](https://github.com/suuranna/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
+
+[Harjoitustyön käyttöohje](https://github.com/suuranna/ot-harjoitustyo/blob/master/dokumentaatio/kayttoohje.md)
+
+[Harjoitustyön testausdokumentti](https://github.com/suuranna/ot-harjoitustyo/blob/master/dokumentaatio/testaus.md)
 
 ## Komentorivitoiminnot
 
